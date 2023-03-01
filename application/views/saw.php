@@ -72,7 +72,7 @@
         $c=$q->row_array();
       ?>
     <section class="content">
-        <div class="col-lg-12 m-3">
+        <div>
                     <?= $this->session->flashdata('message'); ?>
                     <?php if ($this->session->flashdata('error')) {
                     ?>
@@ -89,7 +89,7 @@
                     ?>
                         <h3>Tabel Kriteria</h3>
                         <div class="table-responsive mb-5">
-                            <table class="table table-bordered dataTable" id="datatable-id" role="grid" aria-describedby="datatable-basic_info">
+                            <table class="table table-striped" style="font-size:12px;" id="datatable-id" role="grid" aria-describedby="datatable-basic_info">
                                 <thead class="thead-dark">
                                     <tr>
                                         <th scope="col">No</th>
@@ -134,7 +134,7 @@
                     ?>
                         <h3>Tabel Laptop</h3>
                         <div class="table-responsive mb-5">
-                            <table class="table table-bordered dataTable" id="datatable-id2" role="grid" aria-describedby="datatable-basic_info">
+                            <table class="table table-striped" style="font-size:12px;" id="datatable-id2" role="grid" aria-describedby="datatable-basic_info">
                                 <thead class="thead-dark">
                                     <tr>
                                         <th scope="col">No</th>
@@ -170,7 +170,7 @@
                     ?>
                     <h3>Tabel Riwayat Laptop Terbaik</h3>
                     <div class="table-responsive mb-5">
-                        <table class="table table-bordered dataTable" id="datatable-id3" role="grid" aria-describedby="datatable-basic_info">
+                        <table class="table table-striped" style="font-size:12px;" id="datatable-id3" role="grid" aria-describedby="datatable-basic_info">
                             <thead class="thead-dark">
                                 <tr>
                                     <th scope="col">No</th>

@@ -112,7 +112,7 @@ class Pengguna extends CI_Controller{
                     		$konfirm_password=md5($this->input->post('xpassword2'));
 							$level=$this->input->post('xlevel');
                             if (empty($password) && empty($konfirm_password)) {
-                            	$this->m_pengguna->update_pengguna_tanpa_pass($kode,$nama,$username,$password,$level,$gambar);
+                            	$this->m_pengguna->update_pengguna_tanpa_pass($kode,$nama,$username,$level,$gambar);
 	                    		echo $this->session->set_flashdata('msg','info');
 	               				redirect('pengguna');
      						}elseif ($password <> $konfirm_password) {
@@ -137,7 +137,7 @@ class Pengguna extends CI_Controller{
                     $konfirm_password=md5($this->input->post('xpassword2'));
 					$level=$this->input->post('xlevel');
 	            	if (empty($password) && empty($konfirm_password)) {
-                       	$this->m_pengguna->update_pengguna_tanpa_pass_dan_gambar($kode,$nama,$username,$password,$level);
+                       	$this->m_pengguna->update_pengguna_tanpa_pass_dan_gambar($kode,$nama,$username,$level);
 	                    echo $this->session->set_flashdata('msg','info');
 	               		redirect('pengguna');
      				}elseif ($password <> $konfirm_password) {

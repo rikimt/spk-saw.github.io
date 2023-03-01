@@ -73,7 +73,7 @@
         $c=$q->row_array();
       ?>
     <section class="content">
-        <div class="col-lg-12 m-3">
+        <div>
         <?= $this->session->flashdata('message'); ?>
                     <?php if ($this->session->flashdata('error')) {
                     ?>
@@ -85,7 +85,7 @@
                     <div class="row">
                         <div class="col-lg-10">
                             <h3>Tabel Kriteria</h3>
-                            <table class="table table-bordered">
+                            <table class="table table-striped" style="font-size:12px;">
                                 <thead class="thead-dark">
                                     <tr>
                                         <th scope="col">Nama Kriteria</th>
@@ -134,7 +134,7 @@
                                 if (!empty($sub_kriteria)) {
                                 ?>
                                     <div class="table-responsive mb-5">
-                                        <table class="table table-bordered dataTable" id="datatable-id" role="grid" aria-describedby="datatable-basic_info">
+                                        <table class="table table-striped" style="font-size:12px;" id="datatable-id" role="grid" aria-describedby="datatable-basic_info">
                                             <thead class="thead-dark">
                                                 <tr>
                                                     <th scope="col">No</th>
@@ -185,7 +185,7 @@
                             if (!empty($kriteria) && $laptop > 1) {
                             ?>
                                 <h3>Tabel Pengisian Data</h3>
-                                <table class="table table-bordered">
+                                <table class="table table-striped" style="font-size:12px;">
                                     <thead class="thead-light">
                                         <tr>
                                             <th scope="col">No</th>
@@ -211,7 +211,7 @@
                                                 <?php for ($i = 1; $i <= count($kriteria); $i++) {
                                                 ?>
                                                     <th>
-                                                        <select required id="P<?= $no ?>C<?= $i ?>" class="form-control text-center">
+                                                        <select required id="P<?= $no ?>C<?= $i ?>" class="form-control text-center" style="font-size:12px;">
                                                             <option selected > Bobot 1 - 5</option>
                                                             <option value="1">1</option>
                                                             <option value="2">2</option>

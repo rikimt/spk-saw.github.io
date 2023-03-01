@@ -17,7 +17,7 @@ class M_pengguna extends CI_Model{
 	}
 
 	//UPDATE PENGGUNA //
-	function update_pengguna_tanpa_pass($kode,$nama,$username,$password,$level,$gambar){
+	function update_pengguna_tanpa_pass($kode,$nama,$username,$level,$gambar){
 		$hsl=$this->db->query("UPDATE tbl_pengguna set pengguna_nama='$nama',pengguna_username='$username',pengguna_level='$level',pengguna_photo='$gambar' where pengguna_id='$kode'");
 		return $hsl;
 	}
@@ -26,7 +26,7 @@ class M_pengguna extends CI_Model{
 		return $hsl;
 	}
 
-	function update_pengguna_tanpa_pass_dan_gambar($kode,$nama,$username,$password,$level){
+	function update_pengguna_tanpa_pass_dan_gambar($kode,$nama,$username,$level){
 		$hsl=$this->db->query("UPDATE tbl_pengguna set pengguna_nama='$nama',pengguna_username='$username',pengguna_level='$level' where pengguna_id='$kode'");
 		return $hsl;
 	}
